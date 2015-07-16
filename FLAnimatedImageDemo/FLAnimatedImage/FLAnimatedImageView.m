@@ -263,6 +263,9 @@
                     // If we've looped the number of times that this animated image describes, stop looping.
                     self.loopCountdown--;
                     if (self.loopCountdown == 0) {
+                        if (self.animationCompletionBlock != nil) {
+                            self.animationCompletionBlock();
+                        }
                         [self stopAnimating];
                         return;
                     }
