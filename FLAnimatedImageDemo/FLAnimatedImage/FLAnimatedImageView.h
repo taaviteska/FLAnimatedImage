@@ -27,6 +27,7 @@
 @property (nonatomic, copy) void(^animationCompletionBlock)();
 @property (nonatomic, copy) void(^loopCompletionBlock)(NSUInteger loopCountRemaining);
 
+@property (nonatomic, assign) NSUInteger loopCountdown;
 @property (nonatomic, strong, readonly) UIImage *currentFrame;
 @property (nonatomic, assign, readonly) NSUInteger currentFrameIndex;
 
